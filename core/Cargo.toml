@@ -1,0 +1,20 @@
+[package]
+name = "una-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+reqwest = { version = "0.11", features = ["json","default-tls"] }
+hyper = { version = "0.14", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+async-trait = "0.1.57"
+hex = "0.4"
+base64 = "0.13.0"
+schemars = "0.8.10"
+tonic = { version = "0.8.0", features = ["tls"] }
+prost = "0.11"
+cuid = "1.2.0"
+http = "0.2.8"
+regex = "1.6.0"
